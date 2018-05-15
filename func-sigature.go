@@ -11,6 +11,7 @@ func getSum(x, y int) int {
 	return x + y
 }
 
+//multiple return from a function
 func oddEven(n []int) ([]int, []int) {
 	var x []int
 	var y []int
