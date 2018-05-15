@@ -16,9 +16,9 @@ func oddEven(n []int) ([]int, []int) {
 	var y []int
 	for i := 0; i < len(n); i++ {
 		if n[i]%2 == 0 {
-			append(x, n[i])
+			x = append(x, n[i])
 		} else {
-			append(y, n[i])
+			y = append(y, n[i])
 		}
 	}
 	return x, y
@@ -35,4 +35,5 @@ func main() {
 	sayHello()
 	fmt.Println(getSum(5, 5))
 	fmt.Println(splitInt([]int{1, 2, 3, 4, 5}))
+	fmt.Println(oddEven([]int{1, 2, 3, 4, 5, 6}))
 }
