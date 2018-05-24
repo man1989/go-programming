@@ -5,11 +5,11 @@ import "fmt"
 func main() {
 	var s1 []int
 	printSlices(s1)
-	var s2 = make([]int, 5)
+	var s2 = make([]int, 5, 10)
 	printSlices(s2)
 	s3 := s2[2:4] //slice
 	printSlices(s3)
-	s4 := s3[:3]
+	s4 := s3[:8]
 	printSlices(s4)
 }
 
